@@ -1,6 +1,6 @@
 div.main {
     width: 166px;
-    height: 267px;
+    height: 250px;
     flex-shrink: 0;
 
     display: flex;
@@ -9,6 +9,8 @@ div.main {
     align-items: center;
 
     h3 {
+        margin: 0 0 10px 0;
+
         color: #000;
         text-align: justify;
         font-family: Inter;

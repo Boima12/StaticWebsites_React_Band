@@ -1,4 +1,4 @@
-div.main {
+div.main_contact {
     width: 100%;
     height: 431px;
     background: #FFFBF8;
@@ -136,3 +136,116 @@ div.main {
         left: 361px;
     }
 }
+
+
+@mixin screen320 {
+    div.main_contact {
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px 0 30px 15px;
+        
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h3 {
+            margin-bottom: 5px;
+        }
+
+        p.para1 {
+            margin: 0 0 20px 0;
+        }
+
+        div.contact_box {
+            width: 95%;
+            height: auto;
+
+            box-sizing: border-box;
+
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 40px;
+            
+            div.inputs {
+                width: 100%;
+                height: auto;
+
+                justify-content: flex-start;
+                align-content: stretch;
+
+                input {
+                    margin-bottom: 10px;
+
+                    &:nth-of-type(1) {
+                        width: 100%;
+                    }
+
+                    &:nth-of-type(2) {
+                        width: 100%;
+                    }
+
+                    &:nth-of-type(3) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        button {
+            position: static;
+            top: 0;
+            left: 0;
+
+            margin-top: 20px;
+
+            align-self: center;
+        }
+    }
+}
+
+
+@mixin screen768 {
+    div.main_contact {
+        align-items: center;
+
+        button {
+            align-self: auto;
+        }
+    }
+}
+
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+    @include screen320;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    @include screen320;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    @include screen320;
+    @include screen768;
+} 
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+} 
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1535px) {
+
+} 
+

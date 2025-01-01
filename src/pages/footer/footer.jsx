@@ -4,7 +4,7 @@ import styles from './footer.module.css';
 function Co_footer() {
 
     return(
-        <div className={styles.main}>
+        <div className={styles.main_footer}>
 
             <div className={styles.icons}>
                 <a href="#"><i className="fa-brands fa-facebook"></i></a>

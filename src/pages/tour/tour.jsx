@@ -8,7 +8,7 @@ import img3 from '../../assets/images/sanfran.jpg';
 function Co_tour() {
 
     return(
-        <div className={styles.main}>
+        <div className={styles.main_tour}>
 
             <div className={styles.box1}>
                 <h3>TOUR DATES</h3>

@@ -6,7 +6,7 @@ import img1 from '../../assets/images/Boima.jpg';
 function Co_theband() {
 
     return(
-        <div className={styles.main}>
+        <div className={styles.main_theband}>
 
             <div className={styles.box1}>
                 <h3>THE BAND</h3>

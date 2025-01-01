@@ -1,6 +1,9 @@
 @import './assets/fonts/fonts.css';
 
 
-body {
-    margin: 0;
+html, body {
+    margin: 0;  /* body margin issue */
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;     /* position: fixed; issue */
 }

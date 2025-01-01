@@ -4,7 +4,7 @@ import styles from './contact.module.css';
 function Co_contact() {
 
     return(
-        <div className={styles.main}>
+        <div className={styles.main_contact}>
 
             <h3>CONTACT</h3>
             <p className={styles.para1}>Fan? Drop a note!</p>

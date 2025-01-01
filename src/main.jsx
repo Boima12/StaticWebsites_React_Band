@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css'
 import App from './App.jsx'
+import Co_navbar_fix from './pages/navbar_fix/navbar_fix.jsx';
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -11,8 +12,8 @@ createRoot(document.getElementById("root")).render(
       <Routes>
 
         <Route path="/" element={<App />} />
-        {/* <Route path="/pages/page1" element={<Co_Page1 />} />
-        <Route path="/pages/page2" element={<Co_Page2 />} /> */}
+
+        <Route path="/navbar_fix" element={<Co_navbar_fix />} />
 
       </Routes>
     </BrowserRouter>

@@ -1,19 +1,21 @@
 div.main {
   width: 100%;
-  height: 730px;
+  height: 670px;
   flex-shrink: 0;
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 div.main div.box1 {
-  width: 504px;
+  width: auto;
   height: 68.243px;
   flex-shrink: 0;
-  position: relative;
-  top: 300px;
+  position: absolute;
+  bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -41,5 +43,55 @@ div.main div.box1 p:nth-child(2) {
   margin: 0;
   flex-shrink: 0;
 }
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  div.main {
+    height: 60vh;
+  }
+  div.main div.box1 p:nth-child(1) {
+    font-size: 16px;
+  }
+  div.main div.box1 p:nth-child(2) {
+    font-size: 12px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  div.main {
+    height: 60vh;
+  }
+  div.main div.box1 p:nth-child(1) {
+    font-size: 20px;
+  }
+  div.main div.box1 p:nth-child(2) {
+    font-size: 14px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  div.main {
+    height: 60vh;
+  }
+  div.main div.box1 p:nth-child(1) {
+    font-size: 20px;
+  }
+  div.main div.box1 p:nth-child(2) {
+    font-size: 14px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  div.main {
+    height: 60vh;
+  }
+  div.main div.box1 p:nth-child(1) {
+    font-size: 20px;
+  }
+  div.main div.box1 p:nth-child(2) {
+    font-size: 14px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=slides.module.css.map */

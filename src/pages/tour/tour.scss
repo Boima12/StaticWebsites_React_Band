@@ -1,15 +1,15 @@
-div.main {
+div.main_tour {
     width: 100%;
-    height: 800px;
-    box-sizing: border-box;
-    padding-top: 30px;
+    // height: 800px;
+    // box-sizing: border-box;
+    padding: 50px 0 75px 0;
 
     background: #0B0B0B;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 30px;
 
     div.box1 {
         width: 850px;
@@ -124,11 +124,70 @@ div.main {
 
     div.tickets {
         width: 850px;
-        height: 454px;
+        // height: 454px;
         flex-shrink: 0;
+
+        // outline: 3px solid red;
 
         display: flex;
         justify-content: space-between;
     }
     
 }
+
+@mixin screen320 {
+    div.main_tour {
+        div.box1 {
+            width: 95vw;
+
+            h3 {
+                margin-bottom: 0;
+            }
+        }
+
+        div.tickets {
+            width: 95vw;
+
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 35px;
+        }
+    }
+}
+
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+    @include screen320;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    @include screen320;
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    @include screen320;
+} 
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+} 
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1535px) {
+
+} 
+
+

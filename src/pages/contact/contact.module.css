@@ -1,4 +1,4 @@
-div.main {
+div.main_contact {
   width: 100%;
   height: 431px;
   background: #FFFBF8;
@@ -8,7 +8,7 @@ div.main {
   justify-content: space-around;
   align-items: center;
 }
-div.main h3 {
+div.main_contact h3 {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -18,7 +18,7 @@ div.main h3 {
   line-height: normal;
   letter-spacing: 6.96px;
 }
-div.main p.para1 {
+div.main_contact p.para1 {
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
   font-family: Inter;
@@ -28,7 +28,7 @@ div.main p.para1 {
   line-height: normal;
   margin-top: -55px;
 }
-div.main div.contact_box {
+div.main_contact div.contact_box {
   width: 800px;
   height: 101px;
   flex-shrink: 0;
@@ -36,7 +36,7 @@ div.main div.contact_box {
   justify-content: space-between;
   align-items: center;
 }
-div.main div.contact_box div.paragraphs {
+div.main_contact div.contact_box div.paragraphs {
   width: 200px;
   height: 77px;
   flex-shrink: 0;
@@ -45,7 +45,7 @@ div.main div.contact_box div.paragraphs {
   justify-content: space-between;
   align-items: flex-start;
 }
-div.main div.contact_box div.paragraphs p {
+div.main_contact div.contact_box div.paragraphs p {
   color: #000;
   font-family: Inter;
   font-size: 14px;
@@ -54,10 +54,10 @@ div.main div.contact_box div.paragraphs p {
   line-height: normal;
   margin: 0;
 }
-div.main div.contact_box div.paragraphs span {
+div.main_contact div.contact_box div.paragraphs span {
   margin-right: 20px;
 }
-div.main div.contact_box div.inputs {
+div.main_contact div.contact_box div.inputs {
   width: 400px;
   height: 101px;
   flex-shrink: 0;
@@ -66,7 +66,7 @@ div.main div.contact_box div.inputs {
   justify-content: space-between;
   align-content: space-around;
 }
-div.main div.contact_box div.inputs input {
+div.main_contact div.contact_box div.inputs input {
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -75,28 +75,28 @@ div.main div.contact_box div.inputs input {
   padding-left: 15px;
   box-sizing: border-box;
 }
-div.main div.contact_box div.inputs input:nth-of-type(1) {
+div.main_contact div.contact_box div.inputs input:nth-of-type(1) {
   width: 190px;
   height: 43px;
   flex-shrink: 0;
   border: 0.3px solid #000;
   background: #FFF;
 }
-div.main div.contact_box div.inputs input:nth-of-type(2) {
+div.main_contact div.contact_box div.inputs input:nth-of-type(2) {
   width: 190px;
   height: 43px;
   flex-shrink: 0;
   border: 0.3px solid #000;
   background: #FFF;
 }
-div.main div.contact_box div.inputs input:nth-of-type(3) {
+div.main_contact div.contact_box div.inputs input:nth-of-type(3) {
   width: 100%;
   height: 43px;
   flex-shrink: 0;
   border: 0.3px solid #000;
   background: #FFF;
 }
-div.main button {
+div.main_contact button {
   color: #FFF;
   font-family: Inter;
   font-size: 14px;
@@ -111,5 +111,164 @@ div.main button {
   top: -58px;
   left: 361px;
 }
+
+/* Extra small devices (phones, below 600px) */
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  div.main_contact {
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px 0 30px 15px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  div.main_contact h3 {
+    margin-bottom: 5px;
+  }
+  div.main_contact p.para1 {
+    margin: 0 0 20px 0;
+  }
+  div.main_contact div.contact_box {
+    width: 95%;
+    height: auto;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  div.main_contact div.contact_box div.inputs {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-content: stretch;
+  }
+  div.main_contact div.contact_box div.inputs input {
+    margin-bottom: 10px;
+  }
+  div.main_contact div.contact_box div.inputs input:nth-of-type(1) {
+    width: 100%;
+  }
+  div.main_contact div.contact_box div.inputs input:nth-of-type(2) {
+    width: 100%;
+  }
+  div.main_contact div.contact_box div.inputs input:nth-of-type(3) {
+    width: 100%;
+  }
+  div.main_contact button {
+    position: static;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    align-self: center;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  div.main_contact {
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px 0 30px 15px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  div.main_contact h3 {
+    margin-bottom: 5px;
+  }
+  div.main_contact p.para1 {
+    margin: 0 0 20px 0;
+  }
+  div.main_contact div.contact_box {
+    width: 95%;
+    height: auto;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  div.main_contact div.contact_box div.inputs {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-content: stretch;
+  }
+  div.main_contact div.contact_box div.inputs input {
+    margin-bottom: 10px;
+  }
+  div.main_contact div.contact_box div.inputs input:nth-of-type(1) {
+    width: 100%;
+  }
+  div.main_contact div.contact_box div.inputs input:nth-of-type(2) {
+    width: 100%;
+  }
+  div.main_contact div.contact_box div.inputs input:nth-of-type(3) {
+    width: 100%;
+  }
+  div.main_contact button {
+    position: static;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    align-self: center;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  div.main_contact {
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px 0 30px 15px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  div.main_contact h3 {
+    margin-bottom: 5px;
+  }
+  div.main_contact p.para1 {
+    margin: 0 0 20px 0;
+  }
+  div.main_contact div.contact_box {
+    width: 95%;
+    height: auto;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  div.main_contact div.contact_box div.inputs {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-content: stretch;
+  }
+  div.main_contact div.contact_box div.inputs input {
+    margin-bottom: 10px;
+  }
+  div.main_contact div.contact_box div.inputs input:nth-of-type(1) {
+    width: 100%;
+  }
+  div.main_contact div.contact_box div.inputs input:nth-of-type(2) {
+    width: 100%;
+  }
+  div.main_contact div.contact_box div.inputs input:nth-of-type(3) {
+    width: 100%;
+  }
+  div.main_contact button {
+    position: static;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    align-self: center;
+  }
+  div.main_contact {
+    align-items: center;
+  }
+  div.main_contact button {
+    align-self: auto;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 
 /*# sourceMappingURL=contact.module.css.map */

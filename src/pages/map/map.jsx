@@ -9,7 +9,7 @@ function Co_map() {
     }
 
     return(
-        <div className={styles.main} style={imgstyle}></div>
+        <div className={styles.main_map} style={imgstyle}></div>
     );
 }
 

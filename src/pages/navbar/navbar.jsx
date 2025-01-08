@@ -1,10 +1,10 @@
 import styles from './navbar.module.css';
 import { useRef } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Co_navbar() {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const dropdownRef = useRef(null);
 
@@ -22,10 +22,9 @@ function Co_navbar() {
         }
     };
 
-    // const handle_navbar_fix = () => {
-    //     navigate('/navbar_fix');
-    // }
-
+    const handle_navbar_fix = () => {
+        navigate('/navbar_fix');
+    }
 
     // open/close menu_collapse
     const menu_collapseRef = useRef();
@@ -58,7 +57,7 @@ function Co_navbar() {
                 <a href='#' 
                     onMouseEnter={handleMouseEnter} 
                     onMouseLeave={handleMouseLeave}
-                    // onClick={handle_navbar_fix}
+                    onClick={handle_navbar_fix}
                 >More</a>
 
                 <i className="fa fa-search"></i>
